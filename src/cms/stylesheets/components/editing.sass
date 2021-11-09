@@ -1,0 +1,593 @@
+a.check
+  color: $dark
+  text-decoration: none
+  &:hover
+    color: $hover
+
+::selection
+  background-color: $blue
+  color: white
+
+a.composing, a.composing:hover, a.composing::selection
+  background-color: $link
+  color: white
+  outline: 3px solid $link
+
+#cms_illustration
+  a.check
+    color: white
+    &:hover
+      color: $hover
+
+#cms_page.editing
+  div.embed
+    border: 1px dashed $verypale
+    border-radius: 6px
+
+  figure
+    position: relative
+    width: 100%
+    height: auto
+    transition: background-position 0.5s ease-in-out
+    background:
+      repeat: no-repeat
+      position: center bottom
+      size: cover
+    p
+      color: $pale
+    div.embed
+      width: 100%
+      height: 100%
+
+  figure.image, figure.video
+    img.preview
+      position: absolute
+      top: 0
+      left: 0
+      pointer-events: none
+      &.uploaded
+        opacity: 0 !important
+
+  figure.image
+    img[src=""]
+      opacity: 0
+      min-height: 0
+    div.scale
+      will-change: opacity
+      transition: opacity 0.25s ease-out
+      z-index: 20
+      &.adjusting
+        opacity: 0.75
+    .dropcatcher
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      display: none
+    .prompt
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: white
+      z-index: 10
+    &.over
+      background: radial-gradient($blue, $dark)
+      div.scale
+        opacity: 0.1
+        pointer-events: none
+      .dropcatcher
+        display: block
+    .controls
+      position: absolute
+    div.image.draggable
+      cursor: move
+
+  figure.document
+    min-height: 6em
+
+.cms-blocks
+  p, ul, ol, h2, h3
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      display: block
+      top: 0
+      left: -32px
+      width: 24px
+      height: 24px
+      cursor: pointer
+      background:
+        position: center center
+        size: cover
+        repeat: no-repeat
+  p:before
+    background-image: url("Images/node_types/p.svg")
+  h2:before
+    background-image: url("Images/node_types/h2.svg")
+  h3:before
+    background-image: url("Images/node_types/h3.svg")
+  ul:before
+    background-image: url("Images/node_types/ul.svg")
+  ol:before
+    background-image: url("Images/node_types/ol.svg")
+
+.cms-floater
+  position: absolute
+  display: block
+  top: 0
+  left: 0
+  min-width: 64px
+  transform: translate(-50%, 0)
+  z-index: 1030
+  opacity: 0
+  transition: opacity 0.25s ease-out
+  pointer-events: none
+  a.close
+    display: block
+    position: absolute
+    top: 12px
+    right: 12px
+    cursor: pointer
+    color: $pale
+    transition: color 0.25s ease-out
+    &:hover
+      color: $dark
+    svg
+      width: 24px
+      height: 24px
+  h3
+    margin-top: 0
+    font-weight: lighter
+    text-transform: uppercase
+  .cms-bg // generalise this to serve within cms-menu-body too
+    background-color: white
+    border-radius: 6px
+    box-shadow: none
+    height: 32px
+    padding: 4px
+    box-sizing: border-box
+    z-index: 20
+  &.showing
+    opacity: 1
+    filter: drop-shadow(-1px 1px 6px rgba(50, 50, 0, 0.5))
+    .cms-bg
+      pointer-events: auto
+  .cms-pointer
+    position: absolute
+    display: block
+    content: ''
+    height: 12px
+    width: 12px
+    left: 50%
+    margin-left: -6px
+    background-color: white
+    z-index: 10
+    &.down
+      bottom: -6px
+      transform: rotate(45deg) skew(10deg, 10deg)
+      clip-path: polygon(0% 100%, 100% 0%, 100% 100%)
+    &.up
+      top: -6px
+      transform: rotate(45deg) skew(10deg, 10deg)
+      clip-path: polygon(0% 100%, 100% 0%, 0% 0%)
+
+  &.cms-toolbar
+    height: 32px
+    .cms-buttons
+      display: flex
+      flex-flow: row nowrap
+      a.control
+        color: $pale
+        &:hover
+          color: $green
+        &.selected
+          color: $green
+          &:hover
+            color: $red
+        &.partly
+          color: $orange
+          &:hover
+            color: $green
+
+  &.cms-linker
+    .cms-bg
+      width: 300px
+      height: auto
+      min-height: 128px
+      padding: 16px
+      p
+        margin: 0 0 0.75em 0
+      p.controls
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        a.remove
+          color: $red
+          cursor: pointer
+        a.detail
+          color: $mid
+          cursor: pointer
+          +hover
+          svg
+            transform: rotate(0deg)
+            transition: transform 0.2s ease-out
+          &.open
+            svg
+              transform: rotate(90deg)
+        svg.cms-icon
+          width: 16px
+          height: 16px
+      span.note
+        display: block
+        margin: 0.25em 0
+        color: $pale
+        font-size: 0.9em
+      input[type="text"], input[type="url"]
+        width: 100%
+        padding: 8px 10px
+        box-sizing: border-box
+        border: 1px solid $pale
+        outline: none
+      .details
+        max-height: 0
+        transition: max-height 0.5s ease-out
+        overflow: hidden
+        &.open
+          max-height: 120px
+      .suggested_page_list
+        max-height: 320px
+        overflow: auto
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+          li
+            margin: 0.25em 0
+          a.page
+            cursor: pointer
+            color: $mid
+            &:hover
+              color: $hover
+            svg.cms-icon + span.label
+              vertical-align: top
+
+.cms-helper
+  position: absolute
+  box-sizing: border-box
+  z-index: 1000
+  height: 36px
+  width: 32px
+  top: 0
+  left: 0
+  margin-top: 1px
+
+  .cms-helper-tool
+    position: absolute
+    top: 0
+    left: 0
+    width: 24px
+    height: 32px
+    padding: 4px
+    box-sizing: border-box
+    transition: width 0.25s ease-out, height 0.25s ease-out
+    overflow: hidden
+    background-color: white
+    &.showing
+      z-index: 1020
+      width: 199px
+      border-radius: 20px
+      filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5))
+      a.control.show
+        color: $pale
+      a.control.hide
+        display: inline-block
+        &:hover
+          color: $red
+        & + a.control.show
+          display: none
+    &.cms-inserter
+      &.showing
+        a.control.show
+          svg
+            transform: rotate(135deg)
+          &:hover
+            color: $red
+    &.cms-modifier
+      right: 0
+      left: auto
+      .cms-buttons
+        right: 0
+        left: auto
+        display: flex
+        flex-flow: row-reverse nowrap
+        align-items: flex-start
+        justify-content: flex-start
+        width: 227px
+        &:last-child
+          margin-right: 0
+          margin-left: 2px
+        &:first-child
+          margin-left: 0
+          margin-right: 2px
+
+  .cms-buttons
+    position: absolute
+    left: 2px
+    display: block
+    width: 227px
+
+.cms-buttons
+  a.control
+    display: inline-block
+    width: 24px
+    height: 24px
+    margin: 0 2px
+    cursor: pointer
+    color: $mid
+    transition: color 0.25s ease-out
+    &:hover
+      svg
+        transform: scale(1.25)
+    &:last-child
+      margin-right: 0
+    &:first-child
+      margin-left: 0
+    svg
+      transition: transform 0.5s cubic-bezier(0.12, 0.88, 0.49, 1.53)
+    svg
+      width: 24px
+      height: 24px
+    &.selected
+      color: $dark
+    &.show
+      color: $mid
+      &:hover
+        color: $green
+    &.hide
+      display: none
+
+.cms-importer
+  form.import
+    display: block
+    margin: 0
+    white-space: nowrap
+  input, a.submit
+    display: inline-block
+    vertical-align: top
+    box-sizing: border-box
+    height: 36px
+    font-size: 0.9rem
+    line-height: 20px
+    margin: 0
+  input
+    width: 200px
+    padding: 8px
+    margin-right: 0
+    color: $dark
+    border: 1px solid $pale
+    outline: none
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+  a.submit
+    position: relative
+    +bg($pale, white)
+    width: 72px
+    padding: 8px 12px
+    cursor: pointer
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    pointer-events: none
+    &.available
+      +bg($blue, white)
+      pointer-events: auto
+    &.waiting
+      background: $pale
+      color: $pale
+      pointer-events: none
+      &:after
+        content: ""
+        position: absolute
+        display: block
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background:
+          image: url('Images/white-spinner.svg')
+          size: 30px
+          position: center center
+          repeat: no-repeat
+      
+  .url_check
+    display: block
+    color: $pale
+    font-size: 0.8rem
+  .waiter
+    display: none
+
+.cms-picker
+  max-width: 650px
+  div.filter
+    position: relative
+    input
+      display: inline-block
+      vertical-align: top
+      box-sizing: border-box
+      height: 36px
+      font-size: 0.9rem
+      line-height: 20px
+      margin: 0 10px
+    input
+      background-color: transparent
+      border: none
+      border-bottom: 1px solid $greyish
+      outline: none
+      color: currentColor
+      width: 304px
+      padding: 8px
+      padding-left: 0
+    a.button
+      position: absolute
+      top: 2px
+      right: 14px
+      cursor: pointer
+      padding: 5px
+      border-radius: 20px
+      svg
+        width: 20px
+        height: 20px
+        margin-right: 0
+  ul.cms-assets
+    padding: 0
+    list-style: none
+    margin: 16px 0 0 10px
+    list-style: none
+    +clearfix
+    li.empty
+      color: $mid
+      margin: 30px 0
+    li.upload
+      position: relative
+      display: inline-block
+      float: left
+      margin: 0 16px 16px 0
+      width: 48px
+      height: 48px
+      overflow: hidden
+      label
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 48px
+        height: 48px
+        +bg($greenish)
+        color: white
+        border-radius: 0
+        margin: 0 16px 16px 0
+        cursor: pointer
+        input[type="file"]
+          position: absolute
+          top: -100px
+    li.asset
+      position: relative
+      display: inline-block
+      float: left
+      margin: 0 16px 16px 0
+      width: 48px
+      height: 48px
+      a
+        display: block
+        width: 48px
+        height: 48px
+        box-sizing: border-box
+        padding: 6px
+        text-align: right
+        font-size: 1rem
+        cursor: pointer
+        color: white
+        background:
+          color: $pale
+          position: center center
+          size: cover
+          repeat: no-repeat
+        &.add
+          background-color: $green
+          color: white
+        &.detach
+          background-color: $dark
+          color: white
+      input
+        position: absolute
+        left: 1000px
+      span.cms-progress
+        display: block
+        position: absolute
+        bottom: 4px
+        right: 4px
+        width: 40px !important
+        height: 40px !important
+        margin-top: -20px !important
+        margin-left: -20px !important
+    li.video
+      a.thumbnail:after
+        content: ""
+        position: absolute
+        top: 30%
+        left: 30%
+        width: 40%
+        height: 40%
+        background:
+          image: url('Images/video.svg')
+          position: 0 0
+          repeat: no-repeat
+          size: contain
+    li.document
+      font-size: 1rem
+      margin: 6px
+      a.document
+        font-weight: lighter
+        cursor: pointer
+      svg.cms-icon
+        width: 20px
+        height: 20px
+    li.page
+      font-size: 1rem
+      margin: 6px
+      a.page
+        font-weight: lighter
+        cursor: pointer
+        color: $mid
+        +hover
+      svg.cms-icon
+        width: 20px
+        height: 20px
+        margin-right: 10px
+
+.asset_settings
+  margin: 0 0 10px 10px
+  clear: both
+  h4
+    margin: 6px 0 0 0
+    &:first-child
+      margin-top: 0
+  .placements
+    a.placement
+      color: $pale
+      display: inline-block
+      margin-right: 5px
+      cursor: pointer
+      svg
+        width: 48px
+        height: 48px
+        path.hl
+          fill: $highlight
+      &:hover
+        color: $mid
+        svg
+          path.hl
+            fill: $highlight
+
+  .weightings
+    position: relative
+    padding: 20px
+    a
+      background-color: $pale
+    input:checked + span
+      background-color: $green
+    label.sector
+      display: inline-block
+      span
+        position: relative
+        display: inline-block
+        width: 24px
+        height: 24px
+        border-radius: 12px
+        margin: 4px
+        background-color: $pale
+        &:hover
+          backround-color: $mid
+
+

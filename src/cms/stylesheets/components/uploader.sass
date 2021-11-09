@@ -1,0 +1,56 @@
+div.uploader
+  display: block
+  vertical-align: middle
+  overflow: hidden
+  input[type="file"]
+    position: absolute
+    top: -1000px
+  .busy
+    display: none
+    margin: 0.25em 0
+  span.whirly
+    display: inline-block
+    width: 28px
+    height: 28px
+    vertical-align: middle
+    margin: 0
+    background:
+      position: center center
+      repeat: no-repeat
+      image: url('Images/spinner.gif')
+  span.pending, span.progress
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    width: calc(100% - 76px)
+    margin: 0 4px
+    color: $pale
+    font-size: 0.9rem
+    text-align: center
+    white-space: nowrap
+    overflow: hidden
+  span.progress
+    height: 4px
+    border-radius: 2px
+    background-color: $verypale
+    span.bar
+      display: block
+      position: absolute
+      width: 0
+      height: 4px
+      background-color: $green
+  a.cancel
+    margin: 4px
+    display: inline-block
+    color: $pale
+    +hover
+    svg
+      width: 20px
+      height: 20px
+
+  &.uploading
+    label
+      display: none
+    .busy
+      display: block
+  

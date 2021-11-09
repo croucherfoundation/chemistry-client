@@ -1,0 +1,57 @@
+<div class="cms-bg">
+  <a class="close">
+    <svg class="cms-icon">
+      <use href="/spritemap.svg#sprite-close"></use>
+    </svg>
+  </a>
+  <div class="cms-menu-content">
+    <h3>${scope.t.headings.edit_link}</h3>
+    <p>
+      <label>
+        <input type="url" name="href" placeholder="${scope.t.placeholders.link.href}" autocomplete="off">
+      </label>
+    </p>
+    <p class="controls">
+      <a class="detail">
+        <svg class="cms-icon">
+          <use href="/spritemap.svg#sprite-next_bare"></use>
+        </svg>
+        <span class="label">More options</span>
+      </a>
+      <a class="remove">
+        <svg class="cms-icon">
+          <use href="/spritemap.svg#sprite-cross_button"></use>
+        </svg>
+        <span class="label">Remove link</span>
+      </a>
+    </p>
+    <div class="details">
+      <p>
+        <label>
+          Link class
+          <input type="text" name="class" placeholder="${scope.t.placeholders.link.class}">
+        </label>
+      </p>
+      <p>
+        <label>
+          Title
+          <input type="text" name="title" placeholder="${scope.t.placeholders.link.title}">
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="pops">
+          Open in new window
+        </label>
+      </p>
+    </div>
+    <p>
+      <span class="note">${scope.t.notes.link.href}</span>
+    </p>
+    <div class="suggestions">
+      <div class="suggested_page_list"></div>
+    </div>
+
+  </div>
+</div>
+<div class='cms-pointer up'></div>

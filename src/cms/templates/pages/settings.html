@@ -1,0 +1,78 @@
+<h3>${scope.t.headings.page_settings}</h3>
+
+<p class="config">
+  <label class="prefix" for="page-slug">${scope.t.labels.page.slug}</label>
+  <span class="setting">
+    <input name="slug" id="page-slug" type="text" spellcheck="false" placeholder="${scope.t.placeholders.page.slug}">
+  </span>
+</p>
+
+<p class="config">
+  <label class="prefix" for="page-style">${scope.t.labels.page.style}</label>
+  <span class="setting">
+    <label>
+      <input name="style" type="radio" value="heroic">
+      <svg role="img" class="label page"><title>${scope.t.labels.page.style_heroic}</title><use href="/spritemap.svg#sprite-page-heroic"></use></svg>
+    </label>
+    <label>
+      <input name="style" type="radio" value="illustrated">
+      <svg role="img" class="label page"><title>${scope.t.labels.page.style_illustrated}</title><use href="/spritemap.svg#sprite-page-illustrated"></use></svg>
+    </label>
+    <label>
+      <input name="style" type="radio" value="gallery">
+      <svg role="img" class="label page"><title>${scope.t.labels.page.style_gallery}</title><use href="/spritemap.svg#sprite-page-gallery"></use></svg>
+    </label>
+    <label>
+      <input name="style" type="radio" value="texty">
+      <svg role="img" class="label page"><title>${scope.t.labels.page.style_texty}</title><use href="/spritemap.svg#sprite-page-texty"></use></svg>
+    </label>
+  </span>
+</p>
+
+<p class="config">
+  <label class="prefix" for="page-byline">${scope.t.labels.page.byline}</label>
+  <span class="setting">
+    <input name="byline" id="page-byline" type="text" placeholder="${scope.t.placeholders.page.byline}">
+  </span>
+</p>
+
+<p class="config">
+  <label class="prefix" for="page-summary">${scope.t.labels.page.summary}</label>
+  <span class="setting">
+    <textarea name='summary' id="page-summary" contenteditable='true' placeholder='${scope.t.placeholders.page.summary}'></textarea>
+  </span>
+</p>
+
+
+<a class="toggle">
+  <svg class="prefix">
+    <use href="/spritemap.svg#sprite-next_bare"></use>
+  </svg>
+  <span class="label">
+    ${scope.t.buttons.show_details}
+  </span>
+</a>
+
+<div class="details toggled">
+  <p class="config">
+    <label class="prefix" for="page_collection">${scope.t.labels.page.page_collection}</label>
+    <span class="setting page_collection"></span>
+  </p>
+
+  <p class="config">
+    <label class="prefix" for="page_category">${scope.t.labels.page.page_category}</label>
+    <span class="setting page_category"></span>
+  </p>
+
+  <p class="config">
+    <label class="prefix" for="page_parent">${scope.t.labels.page.page_parent}</label>
+    <span class="setting page_parent"></span>
+  </p>
+
+  <p class="config">
+    <label class="prefix" for="page_terms_q">${scope.t.labels.page.terms}</label>
+  </p>
+
+  <div class="page_terms"></div>
+
+</div>

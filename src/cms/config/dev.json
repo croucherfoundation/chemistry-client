@@ -1,0 +1,8 @@
+{
+  "api_url": "https://pub.croucher.dev/api",
+  "logging": true,
+  "report_errors": true,
+  "trap_errors": false,
+  "terms_url": "https://db.croucher.org.hk/api/tags/search.json?q=",
+  "exit_url": "https://pub.croucher.dev/dashboard"
+}

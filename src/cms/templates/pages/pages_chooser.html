@@ -1,0 +1,36 @@
+<a class="cms-button cms-chooser-head">
+  <svg class="cms-icon filled"><use href="/spritemap.svg#sprite-page"></use></svg>
+</a>
+
+<div class="cms-chooser-body assets">
+  <a class="close">
+    <svg class="cms-icon"><use href="/spritemap.svg#sprite-close"></use></svg>
+  </a>
+  <ul class='options'>
+    <li>
+      <a class="choose children">
+        <svg class="cms-icon"><use href="/spritemap.svg#sprite-branch"></use></svg>
+        <span class='label'>${scope.t.assets.child_pages}</span>
+      </a>
+    </li>
+    <li>
+      <a class="choose similar">
+        <svg class="cms-icon"><use href="/spritemap.svg#sprite-list"></use></svg>
+        <span class='label'>${scope.t.assets.similar_pages}</span>
+      </a>
+    </li>
+    <!-- <li>
+      <a class="choose branch">
+        <svg class="cms-icon"><use href="/spritemap.svg#sprite-branch"></use></svg>
+        <span class='label'>${scope.t.assets.other_child_pages}</span>
+      </a>
+    </li>   -->
+    <li>
+      <a class="choose selected">
+        <svg class="cms-icon"><use href="/spritemap.svg#sprite-list"></use></svg>
+        <span class='label'>${scope.t.assets.select_pages}</span>
+      </a>
+    </li>
+  </ul>
+  <div class='action'></div>
+</div>

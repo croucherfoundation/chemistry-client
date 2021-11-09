@@ -1,0 +1,24 @@
+{
+  "defaults": {
+    "api_url": "/cms/api",
+    "logging": true,
+    "pubsub": true,
+    "report_errors": true,
+    "trap_errors": false,
+    "mock_data": true,
+    "terms_url": "",
+    "exit_url": "/"
+  },
+  "development": {
+
+  },
+  "staging": {
+    
+  },
+  "production": {
+    "logging": false,
+    "report_errors": false,
+    "trap_errors": true,
+    "mock_data": false
+  }
+}

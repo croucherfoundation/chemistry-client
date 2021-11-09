@@ -1,0 +1,124 @@
+[contenteditable]:not([contenteditable=false])
+  outline: none
+  cursor: text
+  &[disabled]
+    pointer-events: none
+  &:focus
+    outline: 0
+
+span[contenteditable]:not([contenteditable=false])
+  display: inline-block
+
+[data-placeholder]:empty:after
+  content: attr(data-placeholder)
+  color: $pale
+  font-style: italic
+
+p.config
+  margin: 1em 0
+  label
+    cursor: pointer
+    &.heading
+      display: block
+      margin: 0.5em 0
+    &.prefix
+      display: inline-block
+      vertical-align: middle
+      width: 76px
+      & + span.setting
+        display: inline-block
+        vertical-align: top
+        width: calc(100% - 84px)
+  span.setting
+    display: block
+  input[type="text"]
+    border: 0
+    padding: 6px 0 5px
+    width: 100%
+    box-sizing: border-box
+    border-bottom: 1px solid transparent
+    transition: border-color 0.5s ease-out
+    color: $dark
+    font-size: 1rem
+    outline: none
+    &:focus, &:placeholder-shown
+      border-color: $pale
+  textarea
+    border: 1px solid transparent
+    width: 100%
+    padding: 6px
+    box-sizing: border-box
+    transition: border-color 0.5s ease-out
+    color: $dark
+    font-size: 1rem
+    outline: none
+    resize: none
+    overflow: auto
+    &:focus, &:placeholder-shown
+      border-color: $pale
+  select
+    padding: 6px
+    width: 100%
+    border-color: $pale
+    border-bottom-left-radius: 1em
+    outline: none
+    background-color: white
+  textarea
+    padding: 6px
+    width: 100%
+    border-color: $pale
+    outline: none
+    box-sizing: border-box
+    height: 120px
+  input[type='checkbox']
+    display: none
+    & + span
+      position: relative
+      display: inline-block
+      color: $pale
+      transition: color 0.25s ease-out
+      svg
+        width: 24px
+        height: 24px
+      svg.checked, svg.unchecked
+        position: absolute
+        top: 0
+        left: 0
+        transition: opacity 0.25s ease-out
+      .checked
+        opacity: 0
+      .unchecked
+        opacity: 1
+      span.label
+        position: relative
+        width: 200px
+        margin-left: 32px
+    &:checked + span
+      color: $green
+      .checked
+        opacity: 1
+      .unchecked
+        opacity: 0
+  input[type="radio"]
+    display: none
+    & + svg.label
+      color: $verypale
+      width: 40px
+      height: 32px
+      fill: currentColor
+    &:checked + svg.label
+      color: $blue
+
+a.toggle
+  color: $mid
+  cursor: pointer
+  svg.prefix
+    transform: rotate(0deg)
+    transition: transform 0.2s ease-out
+  &.open
+    svg.prefix
+      transform: rotate(90deg)
+
+div.toggled
+  position: relative
+  display: none

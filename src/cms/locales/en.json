@@ -1,0 +1,174 @@
+{
+  "affirmations": {
+    "new_page_saved": "Page is saved: click listing to edit.",
+    "page_saved": "Page is saved. Click publish when you are ready to make it public.",
+    "page_published": "Page has been published. Click preview in the save menu to see its public form."
+  },
+  "assets": {
+    "add_document": "Add document",
+    "upload_document": "Upload document",
+    "import_document": "Import document",
+    "reuse_document": "Reuse document",
+    "upload_image": "Upload image",
+    "import_image": "Import image",
+    "reuse_image": "Reuse image",
+    "upload_video": "Upload video",
+    "import_video": "Embed video",
+    "reuse_video": "Reuse video",
+    "remove_image": "Remove image",
+    "child_pages": "Children of this page",
+    "similar_pages": "Similar pages",
+    "other_child_pages": "Children of selected page...",
+    "select_pages": "Selected pages"
+  },
+  "buttons": {
+    "choose_page": "Choose a page",
+    "create_page": "Create a page",
+    "create_child_page": "Add child page",
+    "create_collection_page": "Add collection page",
+    "exit_editor": "Exit page editor",
+    "import": "Import",
+    "publish_page": "Publish page",
+    "save_page": "Save page",
+    "see_page": "Review published page",
+    "show_details": "Show details"
+  },
+  "confirmations": {
+    "and_work_in_progress": "and uploads that are currently in progress.",
+    "leave_editor": "Do you want to leave the page editor?",
+    "page_jump": "Do you want to leave this page and jump to ",
+    "page_unsaved": "You will lose unsaved changes on this page",
+    "work_in_progress": "You will lose the uploads currently in progress"
+  },
+  "editor_loading": "Page Editor Loading",
+  "gotno": {
+    "pages": "No pages to display",
+    "term_suggestions": "Type two characters or more to see matching terms"
+  },
+  "headings": {
+    "choose_image": "Add images",
+    "choose_page": "Add one page",
+    "choose_video": "Add video",
+    "edit_link": "Edit Link",
+    "image_settings": "Image Settings",
+    "image_weighting": "Image Weighting",
+    "import_document": "Import Document",
+    "import_image": "Import Image",
+    "import_video": "Embed Video",
+    "jump_to": "Jump to page",
+    "layout": "Layout",
+    "main_page_collection": "Site pages",
+    "page_control": "Page Control",
+    "page_settings": "Page Settings",
+    "suggested_pages": "Suggested pages",
+    "reuse_document": "Reuse Document",
+    "reuse_image": "Reuse Image",
+    "reuse_video": "Reuse Video"
+  },
+  "labels": {
+    "page": {
+      "byline": "Byline",
+      "filter": "Filter by title, path or content",
+      "private": "Signed-in users only",
+      "private": "Private",
+      "slug": "URL Slug",
+      "visibility": "Visibility",
+      "style": "Layout",
+      "page_collection": "Collection",
+      "page_category": "Category",
+      "page_parent": "Parent",
+      "summary": "Summary",
+      "terms": "Tagging"
+    },
+    "link": {
+      "href": "Destination",
+      "title": "Hover title"
+    }
+  },
+  "missing": {
+    "document": {
+      "title": "Unnamed document"
+    }
+  },
+  "notes": {
+    "link": {
+      "href": "Type a bit of URL or page title to see local link suggestions below"
+    }
+  },
+  "placeholders": {
+    "document": {
+      "file": "File name",
+      "filter": "Filter by name"
+    },
+    "image": {
+      "caption": "Optional caption",
+      "remote_url": "Full URL",
+      "filter": "Filter by name"
+    },
+    "link": {
+      "class": "Optional",
+      "href": "Relative or absolute URL.",
+      "title": "Recommended for accessibility"
+    },
+    "note": {
+      "text": "Note text"
+    },
+    "page": {
+      "blocks": "Please type or paste here. Press return for a new paragraph or shift-return for a new line. When the caret rests on an empty line you can also use the asset button to insert images, video, a list of page links, a downloadable document and other useful content blocks. Select a block of text to add formatting or a link.",
+      "byline": "Author or source",
+      "filter": "Filter by name, path or terms",
+      "page_title": "Page title",
+      "page_content": "Click here to edit the main body of your page. Click the marginal icon to insert blocks and assets. Select a phrase to bring up the formatting and linking menu.",
+      "slug": "Plain text, no spaces",
+      "toc_title": "Optional TOC heading",
+      "new_title": "Enter title and press save button",
+      "summary": "For use in lists and features"
+    },
+    "note": {
+      "text": "Note text"
+    },
+    "quote": {
+      "remarks": "Quoted text",
+      "attribution": "Optional attribution"
+    },
+    "video": {
+      "caption": "Optional caption",
+      "remote_url": "URL or youtube ID",
+      "filter": "Filter by name or ID"
+    },
+    "waiters": {
+    }
+  },
+  "prompts": {
+    "image": "Tap here or drop image"
+  },
+  "tooltips": {
+    "insert_something": "Click to insert asset",
+    "insert_something": "Insert something",
+    "insert_image": "Insert image",
+    "insert_video": "Insert video",
+    "insert_document": "Insert download",
+    "insert_quote": "Insert quote",
+    "insert_note": "Insert note",
+    "insert_pages": "Insert page links"
+  },
+  "validation": {
+    "image_url_ok": "URL looks importable: click to check",
+    "url_not_img": "URL doesn't look like an image address",
+    "url_or_yt_required": "Please give full URL or Youtube ID",
+    "url_ok": "URL looks valid: click to check",
+    "url_required": "Please give full URL",
+    "video_url_ok": "URL looks importable: click to check",
+    "yt_ok": "Check Youtube URL:"
+  },
+  "waiters": {
+    "document_import": "Importing document",
+    "image_import": "Downloading image",
+    "video_import": "Fetching video data",
+    "processing_upload": "Processing upload",
+    "uploading": "Uploading file"
+  },
+  "warnings": {
+    "upload_cancelled": "Upload cancelled"
+  }
+}

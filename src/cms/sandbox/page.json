@@ -1,0 +1,30 @@
+{
+  "data": {
+    "id": "2160",
+    "type": "page",
+    "attributes": {
+      "id": 2160,
+      "path": "news/uncovering-the-mechanism-for-neural-progenitor-competence-regulation",
+      "slug": "uncovering-the-mechanism-for-neural-progenitor-competence-regulation",
+      "style": "heroic",
+      "parent_id": null,
+      "page_category_id": 2,
+      "page_collection_id": 1,
+      "title": "Uncovering the mechanism for neural progenitor competence regulation",
+      "masthead": "<div class=\"images cms-slides\"><div class=\"cms-slider\"><div class=\"cms-slide-holder\"><figure class=\"image cms-slide\" data-image=\"838\"><img class='image' src=\"https://croucher-public.s3.amazonaws.com/pub/images/images/3773/original/brunet-cells.jpg?1595303356\"><figcaption></figcaption></figure></div></div></div>",
+      "content": "<p>A research team led by Professor Kin-ming Kwan has provided significant new insights for stem cell biology and regeneration of neuronal cells.\n</p><p><span style=\"font-size: 1.2rem;\">Our brain is built up from tens of billions of neurons. These neurons are categorised into different subtypes, each with unique cellular characteristics and a specialised function. Neurons are differentiated from neural stem cells by undergoing temporal transition of fate specification.</span><br></p><p>During central nervous system development, neural stem cells determine which type of neurons to generate according to a pre-set temporal schedule. In the case of the cerebellum, neural progenitors will first differentiate into Purkinje cells. As development proceeds, progenitors gradually lose this potency and switch to generating interneurons. How this occurs was previously unclear.</p><p><span style=\"font-size: 1.2rem;\"><a href=\"https://scholars.croucher.org.hk/scholars/kwan-kin-ming\">Professor Kin-ming Kwan (Croucher Scholarship 1991)</a> at the Chinese University of Hong Kong</span><span style=\"font-size: 1.2rem;\">&nbsp;and his team found the process to be modulated by a signalling factor, bone morphogenetic protein (BMP), with the signalling strength of BMP determining the temporal identity transition of neural progenitors.</span></p><p>Through a mouse model lacking the two essential mediators of BMP signalling, Smad1 and Smad5, the scientists were able to demonstrate that the transition of the progenitor fate specification programme was accelerated, leading to significantly fewer Purkinje cells but notably more interneurons being generated in the cerebellum. </p><p>They also found that the same two mediators can repress downstream gene Gsx1. The expression of this gene is a hallmark for potency restriction. </p><p>To uncover this, the researchers injected the two mediators into the cerebrospinal fluid of mouse embryos, causing a sharp increase of BMP signalling strength in the progenitor pool of the developing cerebellum. The approach was able to stall the restriction of stem cell competence and alter the stoichiometry of specific neuronal subtypes.</p><p>The research was published in <a href=\"https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30263-1\">Cell Reports</a>. It could also contribute to the development of novel neurological therapies for diseases such as autism spectrum disorders and hereditary cerebellar ataxia. </p><p>“Our research for the first time shows that, in mammalian brains, the strength of extrinsic signalling factors plays a decisive role in instructing the expression of transcription factors to regulate progenitor fate transition,” Kwan explained. </p><p>“By simply adjusting the strength of certain extrinsic signalling cues, it is already possible to modulate the competence of neural progenitors,” he said. The finding points to the potential in engineering neural progenitors for therapeutic purposes through the manipulation of extrinsic cues. The researchers are now taking a further step to assess this feasibility.</p><p><br></p><p><br></p><p><i>Professor Kin-ming Kwan is Associate Dean (Education), Associate Professor, and Director of the Natural Sciences Programme in the Faculty of Science at the Chinese University of Hong Kong (CUHK). He received undergraduate and doctoral training at the University of Hong Kong, and postdoctoral training at the University of Texas MD Anderson Cancer Center in the United States. He joined CUHK in 2006, where he has been investigating the genetic regulation of neuronal cell development in the cerebellum and its relationship to stem cell renewal and neuronal cell regeneration. He received the CUHK Young Researcher Award in 2008 and CUHK Science Faculty Teaching Award in 2009 and 2013. He was awarded a Croucher Scholarship in 1991. </i></p><p><br></p><p>To view Professor Kwan’s Croucher profile, please click <a href=\"https://scholars.croucher.org.hk/scholars/kwan-kin-ming\">here</a>.&nbsp;</p>",
+      "byline": null,
+      "summary": "A research team led by Professor Kin-ming Kwan has provided significant new insights for stem cell biology and regeneration of neuronal cells.\n",
+      "excerpt": "A research team led by Professor Kin-ming Kwan has provided significant new insights for stem cell biology and regeneration of neuronal cells.\nOur brain is built up from tens of billions of neurons. These neurons are categorised into different subtypes, each with unique cellular characteristics and a specialised function. Neurons are differentiated from neural stem cells by undergoing temporal transition of fate specification.During central nervous system development, neural stem cells determine which ty...",
+      "terms": null,
+      "home": false,
+      "nav": false,
+      "nav_name": null,
+      "nav_position": 718,
+      "created_at": "2020-08-09T18:44:33.000+08:00",
+      "updated_at": "2020-08-09T18:44:33.000+08:00",
+      "published_at": "2020-07-21T11:48:46.000+08:00",
+      "url": "http://pub.croucher.dev/news/uncovering-the-mechanism-for-neural-progenitor-competence-regulation"
+    }
+  }
+}

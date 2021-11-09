@@ -1,0 +1,455 @@
+a.cms-button, label.cms-button
+  cursor: pointer
+  display: inline-block
+  vertical-align: top
+  width: 24px
+  height: 24px
+  overflow: hidden
+  color: $pale
+  transition: transform 0.25s ease-out, color 0.5s ease-out, opacity 0.5s ease-out, border-radius 0.1s ease-out, border-width 0.1s ease-out
+  &:hover
+    opacity: 1
+    transform: scale(1.5)
+  &:active
+    transform: scale(0.9)
+  svg
+    width: 100%
+    height: 100%
+    transition: transform 0.5s ease-out
+    vertical-align: inherit
+
+a.cms-control
+  position: relative
+  display: inline-block
+  vertical-align: top
+  min-width: 32px
+  height: 32px
+  overflow: hidden
+  transition: transform 0.25s ease-out
+  text-decoration: none
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    width: 24px
+    height: 24px
+    & + span.label
+      display: block
+      white-space: nowrap
+      height: 24px
+      line-height: 24px
+      margin-left: 30px
+  &.save
+    color: $green
+  &.publish
+    color: $purple
+  &.view
+    color: $blue
+  &.exit
+    color: $red
+  &.busy
+    color: $mid
+    pointer-events: none
+    background:
+      image: url('Images/spinner.svg')
+      position: top left
+      repeat: no-repeat
+      size: 24px
+    svg
+      opacity: 0
+  &.unavailable, &.default-unavailable:not(.available)
+    color: $mid
+    pointer-events: none
+    opacity: 0.5
+
+.cms-embed-controls
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1002
+  display: grid
+  pointer-events: none
+
+figure.image
+  .cms-embed-controls
+    pointer-events: auto
+
+.cms-controls
+  position: absolute
+  &.adder
+    position: relative
+    margin: 0 1em 1em
+    a.cms-button
+      color: $verypale
+    &:hover
+      a.cms-button
+        color: $green
+  &.remover
+    bottom: 14px
+    right: 12px
+    z-index: 1003
+    a.cms-button
+      color: $red
+      background-color: white
+      border: 4px solid white
+      width: 18px
+      height: 18px
+    &:hover
+      a.cms-button
+        color: $red
+
+.cms-page-controls
+  position: fixed
+  top: 14px
+  left: 14px
+  display: flex
+  flex-flow: row nowrap
+  z-index: 300
+  .cms-menu
+    a.cms-button
+      width: 32px
+      height: 32px
+      color: $blue
+      background-color: white
+      border: 4px solid white
+      border-radius: 20px
+      margin-right: 10px
+      box-shadow: 0 0 5px $shadow
+      svg
+        width: 32px
+        height: 32px
+  .page-config
+    a.cms-button
+      color: $blue
+  .page-control
+    a.cms-button
+      color: $pale
+    &.saveable
+      a.cms-button
+        color: $green
+    &.publishable
+      a.cms-button
+        color: $purple
+    &.published
+      a.cms-button
+        color: $mid
+  a.cms-control
+    cursor: pointer
+
+.cms-menu
+  &.open
+    a.cms-button.cms-menu-head
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      border-bottom-width: 10px
+      transform: scale(1)
+    .cms-menu-body
+      opacity: 1
+      pointer-events: auto
+  .cms-menu-head
+    display: block
+  .cms-menu-body
+    position: absolute
+    display: block
+    width: 360px
+    max-height: 60vh
+    overflow: auto
+    opacity: 0
+    box-shadow: none
+    background-color: white
+    padding: 16px
+    margin-top: 0
+    transition: opacity 0.25s ease-out, box-shadow 0.25s ease-out
+    border-radius: 6px
+    border-top-left-radius: 0
+    pointer-events: none
+    &.narrow
+      width: 240px
+    &.wide
+      width: 440px
+    h3
+      margin-top: 0
+      font-weight: lighter
+      text-transform: uppercase
+    a.close
+      display: block
+      position: absolute
+      top: 12px
+      right: 12px
+      cursor: pointer
+      color: $pale
+      transition: color 0.25s ease-out
+      &:hover
+        color: $dark
+      svg
+        width: 24px
+        height: 24px
+    ul.actions
+      list-style: none
+      padding: 0
+      margin: 0
+      li
+        margin: 0.5em 0
+    div.progress
+      display: inline
+    ul.progresses
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        position: relative
+        margin: 0.25em 0
+        padding-bottom: 0.8em
+        svg.cms-icon.file
+          position: relative
+          display: inline-block
+          vertical-align: middle
+          color: $green
+        span.file_name
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          font-size: 0.8rem
+          color: $pale
+          text-align: center
+        span.bar_holder
+          position: relative
+          display: inline-block
+          vertical-align: middle
+          margin: 0 12px
+          width: calc(100% - 78px)
+          height: 4px
+          background-color: $coolgrey00
+          span.bar
+            display: block
+            width: 0
+            height: 4px
+            background-color: $green
+            transition: width 250ms ease-out
+        a.cancel
+          display: inline-block
+          vertical-align: middle
+          margin-left: 6px
+          color: $red
+          cursor: pointer
+          opacity: 0.5
+          transition: color 0.25s ease-out, opacity 0.25s ease-out
+          &:hover
+            color: $red
+            opacity: 1
+
+.cms-chooser
+  width: 100%
+  height: 100%
+  margin-top: -1px
+  margin-left: -1px
+  display: grid
+  place-items: center
+  background-color: transparent
+  transition: background-color 0.25s ease-out
+  &.open
+    background-color: $overlay
+    border: 1px dashed $verypale
+    .cms-chooser-head
+      opacity: 0
+      pointer-events: none
+      transform: scale(0.25)
+      &:hover
+        transform: scale(0.25)
+        opacity: 0
+    .cms-chooser-body
+      opacity: 1
+      pointer-events: auto
+  &.over
+    background-color: $greenish
+  .cms-chooser-head
+    position: absolute
+    display: block
+    top: 12px
+    right: 9px
+    z-index: 1004
+    width: 28px
+    height: 28px
+    color: $blue
+    background-color: white
+    border: 4px solid white
+    border-radius: 32px
+    pointer-events: auto
+    cursor: pointer
+    transition: opacity 0.25s ease-out, color 0.25s ease-out, transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.26)
+    &:hover
+      transform: scale(1.5)
+  .cms-chooser-body
+    position: relative
+    z-index: 50
+    display: grid
+    place-items: center
+    box-sizing: border-box
+    padding: 16px
+    width: 100%
+    height: 100%
+    overflow: auto
+    padding: 0
+    color: $dark
+    opacity: 0
+    transition: opacity 0.5s ease-out, box-shadow 0.5s ease-out
+    pointer-events: none
+    div.progress, div.action, ul.options
+      font-size: 1.2rem
+      margin: 0
+      padding: 0.75em 1.5em
+      border-radius: 8px
+      line-height: 2
+      max-height: 400px
+      overflow: auto
+    div.progress
+      width: 240px
+      padding: 20px
+      display: grid
+      place-items: center
+      & > div
+        text-align: center
+      span.file_name
+        display: block
+        margin: 0.25em auto
+        font-size: 0.9rem
+        opacity: 0.75
+      span.percentage
+        float: right
+        &:after
+          content: "%"
+        &:empty
+          display: none
+      span.bar_holder
+        position: relative
+        display: block
+        margin-top: 2px
+        width: 100%
+        height: 4px
+        background-color: $coolgrey00
+        span.bar
+          display: block
+          width: 0
+          height: 4px
+          background-color: $green
+          transition: width 250ms ease-out
+      a.cancel
+        display: block
+        margin: 1em auto 0
+        color: $red
+        opacity: 0.5
+        transition: color 0.25s ease-out, opacity 0.25s ease-out
+        cursor: pointer
+        &:hover
+          opacity: 1
+      &.finished
+        span.percentage
+          color: $green
+      span.error
+        color: $red
+        display: none
+      &:empty
+        display: none
+    ul.options
+      display: block
+      list-style: none
+      li
+        a, label
+          +oneliner
+          cursor: pointer
+          color: $blue
+          &:hover
+            color: $hover
+        label.upload
+          color: $green
+        a.import
+          color: $blue
+        a.reuse
+          color: $purple
+        a.remove
+          color: $red
+        a.unavailable
+          color: $pale
+          opacity: 0.5
+          pointer-events: none
+    div.action
+      display: none
+      margin: auto
+    a.sidestep, a.close
+      cursor: pointer
+      color: $pale
+      &:hover
+        color: $mid
+    a.sidestep
+      color: $mid
+      +hover
+    a.close
+      display: block
+      position: absolute
+      top: 16px
+      right: 16px
+      z-index: 200
+      svg
+        width: 24px
+        height: 24px
+    a.back
+      +oneliner
+      cursor: pointer
+      color: $dark
+      +hover
+    h3
+      margin: 0 0 1em 0
+      font-weight: normal
+      text-transform: uppercase
+      font-size: 1.1rem
+      svg, span.label
+        display: inline-block
+        vertical-align: middle
+        line-height: 1.6
+    label.upload
+      overflow: hidden
+      input[type="file"]
+        position: absolute
+        top: -100px
+      
+.cms-dropmask
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: auto
+  z-index: 1001
+
+#cms_illustration
+  .cms-chooser.open
+    border: none
+  .cms-chooser.over
+    background-color: $greenish
+
+a.inline.save
+  position: relative
+  display: inline-block
+  margin: 0 10px
+  right: 0
+  color: $pale
+  cursor: pointer
+  transition: color 0.25s ease-out
+  svg
+    width: 20px
+    height: 20px
+  &:hover
+    color: $green
+
+@media (max-width: 400px)
+  .cms-menu
+    .cms-menu-body
+      width: 300px
+
+@media (min-width: 667px)
+  .cms-controls.remover
+    bottom: -14px
+    right: -14px

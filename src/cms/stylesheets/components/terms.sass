@@ -1,0 +1,92 @@
+div.page_terms
+  div.terms
+    display: inline
+    ul
+      position: relative
+      display: inline
+      padding: 0
+      li
+        position: relative
+        display: inline-block
+        margin: 0 5px 7px 0
+        padding: 6px 32px 6px 12px
+        background: linear-gradient(to top, $blue, lighten($blue, 10))
+        color: white
+        border-radius: 32px
+        a.detach
+          position: absolute
+          display: block
+          top: 0
+          right: 0
+          padding: 5px 8px
+          color: white
+          opacity: 0.75
+          transition: opacity 0.25s ease-out
+          cursor: pointer
+          &:hover
+            opacity: 1
+        svg.cms-icon
+          width: 16px
+          height: 16px
+  div.suggester
+    position: relative
+    display: inline-block
+    span.prompt
+      display: inline-block
+      min-width: 32px
+      border: 1px solid $pale
+      outline: none
+      margin: 0 5px 7px 0
+      padding: 6px 32px 6px 10px
+      font-size: 1rem
+      color: $blue
+      border-radius: 32px
+    a.reset
+      position: absolute
+      display: block
+      top: 0
+      right: 0
+      padding: 6px 12px
+      color: $mid
+      opacity: 0.75
+      transition: opacity 0.25s ease-out
+      cursor: pointer
+      &:hover
+        opacity: 1
+    svg.cms-icon
+      width: 16px
+      height: 16px
+
+  div.suggestions
+    ul
+      margin: 10px 0 0 0
+      padding: 0
+      list-style: none
+      margin-left: -20px
+      width: calc(100% + 40px)
+      li
+        border-top: 1px dotted $pale
+        padding: 0
+        &:first-child
+          border-top: none
+        &.none
+          color: $pale
+          padding: 10px 20px
+        a
+          color: $mid
+          display: block
+          padding: 10px 20px
+          cursor: pointer
+          &:hover
+            background-color: $coolgrey00
+            color: $dark
+        &.selected
+          a
+            background: linear-gradient(to top, $blue, lighten($blue, 10))
+            color: white
+            &:hover
+              background-color: lighten($blue, 10)
+        &.unavailable
+          opacity: 0.5
+          pointer-events: none
+
