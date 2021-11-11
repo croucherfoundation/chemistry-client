@@ -116,19 +116,8 @@ module.exports = {
       },
       // {
       //   test: /\.html$/i,
-      //   exclude: /node_modules/,
-      //   use: [{
-      //     loader: 'babel-loader'
-      //   }, {
-      //     loader: 'template-string-loader'
-      //   },{
-      //     loader: 'html-loader',
-      //   }]
+      //   loader: 'html-loader'
       // },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader'
-      },
       {
         test    : /\.(png|jpg|svg|gif)$/,
         loader  : 'url-loader',
