@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/pages/settings';
+import Template from 'Templates/pages/settings.html';
 import CollectionSelectView from 'Views/helpers/collection_select';
 import PageCollectionsCollection from 'Collections/page_collections';
 import PageCategoriesCollection from 'Collections/page_categories';

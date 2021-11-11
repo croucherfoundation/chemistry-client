@@ -1,5 +1,5 @@
 import EmbeddedAssetView from 'Views/assets/embedded_asset';
-import Template from 'Templates/videos/embedded_video';
+import Template from 'Templates/videos/embedded_video.html';
 import Video from 'Models/video';
 import VideoChooserView from './video_chooser';
 
