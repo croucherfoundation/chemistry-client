@@ -5,7 +5,6 @@ const isDevelopment = true // process.env.NODE_ENV === 'development'
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
-const HtmlWebpackPlugin = require('chemistry-client/node_modules/html-webpack-plugin');
 
 module.exports = {
   entry: {
