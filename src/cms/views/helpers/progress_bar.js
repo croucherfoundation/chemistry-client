@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/progress_bar';
+import Template from 'Templates/helpers/progress_bar.html';
 
 class ProgressBarView extends CmsView {
   onAfterRender() {

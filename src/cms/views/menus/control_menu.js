@@ -1,5 +1,5 @@
 import MenuView from 'Views/base/menu';
-import Template from 'Templates/menus/control_menu';
+import Template from 'Templates/menus/control_menu.html';
 import PageSaverView from 'Views/pages/saver';
 
 class PageControlMenuView extends MenuView {}

@@ -1,5 +1,5 @@
 import EmbeddedAssetView from 'Views/assets/embedded_asset';
-import Template from 'Templates/images/embedded_image';
+import Template from 'Templates/images/embedded_image.html';
 import ImageChooserView from './image_chooser';
 
 class EmbeddedImageView extends EmbeddedAssetView {

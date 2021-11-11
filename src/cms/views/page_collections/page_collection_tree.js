@@ -1,7 +1,7 @@
 import CmsView from 'Views/base/view';
 import PagesCollection from 'Collections/pages';
 import PageTreeView from 'Views/pages/page_tree';
-import Template from 'Templates/page_collections/page_collection_tree';
+import Template from 'Templates/page_collections/page_collection_tree.html';
 
 class PageCollectionTreeView extends CmsView {
   onAfterRender() {

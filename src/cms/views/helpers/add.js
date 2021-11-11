@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/add';
+import Template from 'Templates/helpers/add.html';
 
 class AddView extends CmsView {}
 

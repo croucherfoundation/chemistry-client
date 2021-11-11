@@ -1,5 +1,5 @@
 import ListedAssetView from 'Views/assets/listed_asset';
-import Template from 'Templates/images/listed_image';
+import Template from 'Templates/images/listed_image.html';
 
 class ListedImageView extends ListedAssetView {
   styleBackgroundImage(url) {

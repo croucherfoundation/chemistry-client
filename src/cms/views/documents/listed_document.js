@@ -1,5 +1,5 @@
 import ListedAssetView from 'Views/assets/listed_asset';
-import Template from 'Templates/documents/listed_document';
+import Template from 'Templates/documents/listed_document.html';
 import { translate } from 'Utility/i18n';
 import { truncate } from 'Utility/strings';
 

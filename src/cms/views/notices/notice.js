@@ -7,7 +7,7 @@
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
 import { View } from 'backbone.marionette';
-import Template from 'Templates/notices/notice';
+import Template from 'Templates/notices/notice.html';
 
 class NoticeView extends View {
   constructor(...args) {

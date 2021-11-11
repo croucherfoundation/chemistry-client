@@ -1,7 +1,7 @@
 // TODO retrieve footnote logic from chemistry
 
 import EmbeddedAssetView from 'Views/assets/embedded_asset';
-import Template from 'Templates/notes/embedded_note';
+import Template from 'Templates/notes/embedded_note.html';
 import Note from 'Models/note';
 
 class EmbeddedNoteView extends EmbeddedAssetView {
