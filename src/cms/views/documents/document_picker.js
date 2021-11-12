@@ -1,5 +1,5 @@
 import AssetPickerView from 'Views/assets/asset_picker';
-import Template from 'Templates/documents/document_picker';
+import Template from 'Templates/documents/document_picker.html';
 import DocumentListView from './document_list';
 
 class DocumentPickerView extends AssetPickerView {}

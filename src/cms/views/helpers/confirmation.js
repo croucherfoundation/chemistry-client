@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/confirmation';
+import Template from 'Templates/helpers/confirmation.html';
 
 class ConfirmationView extends CmsView {
   onRender() {

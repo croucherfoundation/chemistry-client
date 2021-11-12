@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/terms/suggested_term';
+import Template from 'Templates/terms/suggested_term.html';
 
 class SuggestedTermView extends CmsView { }
 

@@ -1,5 +1,5 @@
 import MenuView from 'Views/base/menu';
-import Template from 'Templates/menus/site_menu';
+import Template from 'Templates/menus/site_menu.html';
 import NavigatorView from 'Views/pages/navigator';
 
 class SiteMenuView extends MenuView {}

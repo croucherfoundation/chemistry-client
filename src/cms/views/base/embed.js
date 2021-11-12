@@ -1,6 +1,6 @@
 import CmsView from 'Views/base/view';
 import DetachView from 'Views/helpers/detach';
-import Template from 'Templates/base/embed';
+import Template from 'Templates/base/embed.html';
 
 class EmbedView extends CmsView {
   constructor(...args) {

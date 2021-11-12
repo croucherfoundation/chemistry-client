@@ -1,5 +1,5 @@
 import AssetPickerView from 'Views/assets/asset_picker';
-import Template from 'Templates/pages/page_picker';
+import Template from 'Templates/pages/page_picker.html';
 import PageListView from './page_list';
 
 class PagePickerView extends AssetPickerView {

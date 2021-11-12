@@ -1,5 +1,5 @@
 import CmsCollectionView from 'Views/base/collection_view';
-import Template from 'Templates/pages/navigator';
+import Template from 'Templates/pages/navigator.html';
 import PageCollectionTreeView from 'Views/page_collections/page_collection_tree';
 import { libraryPageCollections } from 'Utility/library';
 

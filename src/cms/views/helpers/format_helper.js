@@ -5,7 +5,7 @@
  */
 
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/format_helper';
+import Template from 'Templates/helpers/format_helper.html';
 import AnchorHelperView from 'Views/helpers/anchor_helper';
 
 class FormatHelperView extends CmsView {

@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/terms/attached_term';
+import Template from 'Templates/terms/attached_term.html';
 
 class AttachedTermView extends CmsView {
   constructor(...args) {

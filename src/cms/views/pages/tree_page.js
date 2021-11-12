@@ -1,4 +1,4 @@
-import Template from 'Templates/pages/tree_page';
+import Template from 'Templates/pages/tree_page.html';
 import ListedPageView from './listed_page';
 
 class TreePageView extends ListedPageView {

@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/detach';
+import Template from 'Templates/helpers/detach.html';
 
 class DetachView extends CmsView {}
 

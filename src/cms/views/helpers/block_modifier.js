@@ -6,7 +6,7 @@
  */
 
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/block_modifier';
+import Template from 'Templates/helpers/block_modifier.html';
 
 class BlockModifierView extends CmsView {
   constructor(...args) {

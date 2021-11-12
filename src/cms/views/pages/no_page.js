@@ -1,5 +1,5 @@
 import NoAssetView from 'Views/assets/no_asset';
-import Template from 'Templates/pages/no_page';
+import Template from 'Templates/pages/no_page.html';
 
 class NoPageView extends NoAssetView { }
 

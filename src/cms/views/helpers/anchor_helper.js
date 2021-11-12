@@ -7,7 +7,7 @@
 import CmsView from 'Views/base/view';
 import PagesCollection from 'Collections/pages';
 import SuggestedPagesView from 'Views/pages/suggested_pages';
-import Template from 'Templates/helpers/anchor_helper';
+import Template from 'Templates/helpers/anchor_helper.html';
 import { Model } from 'backbone';
 
 class AnchorHelperView extends CmsView {

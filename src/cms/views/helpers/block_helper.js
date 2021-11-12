@@ -7,7 +7,7 @@
  */
 
 import CmsView from 'Views/base/view';
-import Template from 'Templates/helpers/block_helper';
+import Template from 'Templates/helpers/block_helper.html';
 import AssetInserter from 'Views/assets/asset_inserter';
 import BlockModifier from './block_modifier';
 

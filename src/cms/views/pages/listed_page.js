@@ -3,7 +3,7 @@ import { truncate } from 'Utility/strings';
 import { translate } from 'Utility/i18n';
 import { textOnly } from 'Utility/cleaning';
 import ListedAssetView from 'Views/assets/listed_asset';
-import Template from 'Templates/pages/listed_page';
+import Template from 'Templates/pages/listed_page.html';
 
 class ListedPageView extends ListedAssetView {
   onAfterRender() {
