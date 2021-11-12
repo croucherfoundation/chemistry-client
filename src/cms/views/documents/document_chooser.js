@@ -1,5 +1,5 @@
 import AssetChooserView from 'Views/assets/asset_chooser';
-import Template from 'Templates/documents/document_chooser.html';
+import Template from 'Templates/documents/document_chooser';
 import { libraryDocuments } from 'Utility/library';
 import DocumentPickerView from './document_picker';
 

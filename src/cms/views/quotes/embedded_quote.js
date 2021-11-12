@@ -1,5 +1,5 @@
 import EmbeddedAssetView from 'Views/assets/embedded_asset';
-import Template from 'Templates/quotes/embedded_quote.html';
+import Template from 'Templates/quotes/embedded_quote';
 import Quote from 'Models/quote';
 
 class EmbeddedQuoteView extends EmbeddedAssetView {

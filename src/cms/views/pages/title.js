@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/pages/title.html';
+import Template from 'Templates/pages/title';
 
 class PageTitleView extends CmsView {}
 

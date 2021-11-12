@@ -1,6 +1,6 @@
 import { Model } from 'backbone';
 import EmbeddedCollectionView from 'Views/assets/embedded_collection';
-import Template from 'Templates/images/embedded_images.html';
+import Template from 'Templates/images/embedded_images';
 import ImagesCollection from 'Collections/images';
 import slideshow from 'Utility/slideshow';
 import EmbeddedImageView from './embedded_image';

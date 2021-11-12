@@ -4,7 +4,7 @@
     pointer-events: 0
   div.mask
     position: fixed
-    z-index: 1000
+    z-index: 1000;
     display: grid
     place-items: center
     top: 0
@@ -16,19 +16,19 @@
     width: 300px
     height: auto
     background-color: white
-    padding: 1em
-    box-shadow: 0 1px 12px $shadow
+    padding: 1em;
+    box-shadow: 0 1px 12px $shadow;
     p.message
-      font-size: 1.5rem
-      margin-top: 0
+      font-size: 1.5rem;
+      margin-top: 0;
     p.notes
-      font-size: 1rem
-      color: $mid
+      font-size: 1rem;
+      color: $mid;
     div.decision
       display: flex
       flex-flow: row nowrap
-      justify-content: space-between
-      align-items: flex-start
+      justify-content: space-between;
+      align-items: flex-start;
     a.accept
       +button($red, white)
     a.reject

@@ -1,26 +1,27 @@
 {
-  "_from": "chemistry-client@^2.3.8",
+  "_from": "chemistry-client",
   "_id": "chemistry-client@2.3.8",
   "_inBundle": false,
   "_integrity": "sha512-54mnAz9lAHEPSBJCiuI6s3+f2pB2SVO0Zb3SJXxC44dKZZeVGlLC+ROya88oFoZ+GVwx5VqkBu8X+G16iWthKw==",
   "_location": "/chemistry-client",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "chemistry-client@^2.3.8",
+    "raw": "chemistry-client",
     "name": "chemistry-client",
     "escapedName": "chemistry-client",
-    "rawSpec": "^2.3.8",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "^2.3.8"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/chemistry-client/-/chemistry-client-2.3.8.tgz",
   "_shasum": "dc28c72d3f4b826b63af5984546ea7a437b236b8",
-  "_spec": "chemistry-client@^2.3.8",
+  "_spec": "chemistry-client",
   "_where": "/home/ying/code/binarylab/projects/croucher/chemistry-editor-test",
   "author": {
     "name": "Will Ross for Spanner",

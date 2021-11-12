@@ -1,5 +1,5 @@
 import AssetChooserView from 'Views/assets/asset_chooser';
-import Template from 'Templates/images/image_chooser.html';
+import Template from 'Templates/images/image_chooser';
 import { libraryImages } from 'Utility/library';
 import ImageImporterView from './image_importer';
 import ImagePickerView from './image_picker';

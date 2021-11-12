@@ -3,7 +3,7 @@ import PageMastheadView from 'Views/pages/masthead';
 import PageControlMenuView from 'Views/menus/control_menu';
 import PageConfigMenuView from 'Views/menus/config_menu';
 import SiteMenuView from 'Views/menus/site_menu';
-import Template from 'Templates/pages/page.html';
+import Template from 'Templates/pages/page';
 import PageTitleView from './title';
 import PageContentView from './content';
 

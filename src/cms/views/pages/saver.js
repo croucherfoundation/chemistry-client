@@ -1,6 +1,6 @@
 import CmsView from 'Views/base/view';
 import ProgressBarsView from 'Views/helpers/progress_bars';
-import Template from 'Templates/pages/saver.html';
+import Template from 'Templates/pages/saver';
 import { workInProgress } from 'Utility/jobs';
 
 class PageSaverView extends CmsView {

@@ -1,5 +1,5 @@
 import AssetChooserView from 'Views/assets/asset_chooser';
-import Template from 'Templates/videos/video_chooser.html';
+import Template from 'Templates/videos/video_chooser';
 import { libraryVideos } from 'Utility/library';
 import VideoImporterView from './video_importer';
 import VideoPickerView from './video_picker';

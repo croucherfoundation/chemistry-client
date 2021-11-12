@@ -24,11 +24,11 @@ figure.image, figure.video
   img, video
     width: 100%
     height: 100%
-    min-height: 240px
+    min-height: 240px;
     image-rendering: pixelated
     transition: opacity 0.5s ease-out
     object-fit: cover
-    font-family: 'object-fit: cover'
+    font-family: 'object-fit: cover;'
     iframe
       width: 100%
       height: 100%
@@ -47,7 +47,7 @@ div.embedded
       font-weight: lighter
       margin: 0.5em 32px
     ul.collection
-      list-style: none
+      list-style: none;
       margin: 0
       padding: 0 0 0 32px
       li.page
@@ -106,9 +106,9 @@ div.embedded
     position: relative
     margin: 0
     figcaption
-      z-index: 1020
-      display: block
-      position: relative
+      z-index: 1020;
+      display: block;
+      position: relative;
       font-style: italic
       line-height: 1.35
       text-align: center
@@ -177,7 +177,7 @@ div.embedded
         &:active
           box-shadow: inset 0 3px 6px $shadow
         span.label
-          min-height: 1.2em
+        min-height: 1.2em
       span.href
         display: block
         text-align: center
@@ -243,8 +243,8 @@ div.embedded
     &.document
       margin: 0
       padding: 0.5em 0
-      display: grid
-      place-content: center
+      display: grid;
+      place-content: center;
       img.icon
         display: inline-block
         vertical-align: top
@@ -264,7 +264,7 @@ div.embedded
         vertical-align: middle
         margin-left: 0.25em
         color: $pale
-        cursor: pointer
+        cursor $pointer
         transition: color 0.5s ease-out, transform 0.5s ease-out
         svg
           width: 12px
@@ -295,7 +295,7 @@ a.document
 @media (min-width: 667px)
   div.embed
     width: 100%
-    margin: 2em 0 2em 0
+    margin: 2em 0 2em 0;
 
 @media (min-width: 1020px)
   figure.image, figure.video

@@ -1,7 +1,7 @@
 import TermsCollection from 'Collections/terms';
 import TermsAttachedView from 'Views/terms/terms_attached';
 import TermsSuggestedView from 'Views/terms/terms_suggested';
-import Template from 'Templates/pages/terms.html';
+import Template from 'Templates/pages/terms';
 import CmsView from 'Views/base/view';
 
 class PageTermsView extends CmsView {

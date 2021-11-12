@@ -1,5 +1,5 @@
 import AssetImporterView from 'Views/assets/asset_importer';
-import Template from 'Templates/images/image_importer.html';
+import Template from 'Templates/images/image_importer';
 import Image from 'Models/image';
 
 class ImageImporterView extends AssetImporterView {}

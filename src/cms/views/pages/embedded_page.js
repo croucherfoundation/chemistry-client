@@ -1,5 +1,5 @@
 import { truncate } from 'Utility/strings';
-import Template from 'Templates/pages/embedded_page.html';
+import Template from 'Templates/pages/embedded_page';
 import ListedPageView from './listed_page';
 
 class EmbeddedPageView extends ListedPageView {

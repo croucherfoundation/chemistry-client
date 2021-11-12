@@ -1,5 +1,5 @@
 import CmsView from 'Views/base/view';
-import Template from 'Templates/assets/asset_inserter.html';
+import Template from 'Templates/assets/asset_inserter';
 
 class AssetInserterView extends CmsView {
   constructor(...args) {

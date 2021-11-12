@@ -1,5 +1,5 @@
 import MenuView from 'Views/base/menu';
-import Template from 'Templates/menus/config_menu.html';
+import Template from 'Templates/menus/config_menu';
 import PageSettingsView from 'Views/pages/settings';
 
 class PageConfigMenuView extends MenuView {}

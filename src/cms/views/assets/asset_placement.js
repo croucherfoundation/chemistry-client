@@ -1,5 +1,5 @@
 import MenuView from 'Views/base/menu';
-import Template from 'Templates/assets/asset_placement.html';
+import Template from 'Templates/assets/asset_placement';
 
 class AssetPlacementView extends MenuView {
   constructor(...args) {

@@ -1,6 +1,6 @@
 import EmbeddedAssetView from 'Views/assets/embedded_asset';
 import Document from 'Models/document';
-import Template from 'Templates/documents/embedded_document.html';
+import Template from 'Templates/documents/embedded_document';
 import DocumentChooserView from './document_chooser';
 
 class EmbeddedDocumentView extends EmbeddedAssetView {

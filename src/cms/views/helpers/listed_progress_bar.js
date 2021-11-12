@@ -1,4 +1,4 @@
-import Template from 'Templates/helpers/listed_progress_bar.html';
+import Template from 'Templates/helpers/listed_progress_bar';
 import ProgressBarView from './progress_bar';
 
 class ListedProgressBarView extends ProgressBarView {}

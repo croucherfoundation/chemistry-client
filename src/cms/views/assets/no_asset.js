@@ -1,5 +1,5 @@
 import NothingView from 'Views/base/nothing';
-import Template from 'Templates/assets/no_asset.html';
+import Template from 'Templates/assets/no_asset';
 
 class NoAssetView extends NothingView {}
 

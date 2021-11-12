@@ -1,4 +1,4 @@
-import Template from 'Templates/pages/suggested_page.html';
+import Template from 'Templates/pages/suggested_page';
 import ListedPageView from './listed_page';
 
 class SuggestedPageView extends ListedPageView {}

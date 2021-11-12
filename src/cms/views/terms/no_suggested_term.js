@@ -1,5 +1,5 @@
 import NothingView from 'Views/base/nothing';
-import Template from 'Templates/terms/no_suggested_term.html';
+import Template from 'Templates/terms/no_suggested_term';
 
 class NoSuggestedTermView extends NothingView {}
 

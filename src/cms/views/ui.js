@@ -8,7 +8,7 @@ import Page from 'Models/page';
 import PageView from 'Views/pages/page';
 import NoticesView from 'Views/notices/notices';
 import ConfirmationView from 'Views/helpers/confirmation';
-import Template from 'Templates/ui.html';
+import Template from 'Templates/ui';
 import { translate } from 'Utility/i18n';
 import { getConfig } from 'Config/config';
 import { trackWorkInProgress } from 'Utility/jobs';

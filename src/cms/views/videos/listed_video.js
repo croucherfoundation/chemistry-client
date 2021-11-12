@@ -1,5 +1,5 @@
 import ListedAssetView from 'Views/assets/listed_asset';
-import Template from 'Templates/images/listed_image.html';
+import Template from 'Templates/images/listed_image';
 
 class ListedVideoView extends ListedAssetView {
   styleBackgroundImage(url) {

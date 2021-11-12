@@ -11,7 +11,7 @@
 
 import { Model } from 'backbone';
 import EmbeddedCollectionView from 'Views/assets/embedded_collection';
-import Template from 'Templates/pages/embedded_pages.html';
+import Template from 'Templates/pages/embedded_pages';
 import PagesCollection from 'Collections/pages';
 import EmbeddedPageView from './embedded_page';
 import PagesChooserView from './pages_chooser';

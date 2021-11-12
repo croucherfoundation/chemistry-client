@@ -1,6 +1,6 @@
 import AssetChooserView from 'Views/assets/asset_chooser';
 import PagePickerView from 'Views/pages/page_picker';
-import Template from 'Templates/pages/pages_chooser.html';
+import Template from 'Templates/pages/pages_chooser';
 import { libraryPages } from 'Utility/library';
 
 class PagesChooserView extends AssetChooserView {

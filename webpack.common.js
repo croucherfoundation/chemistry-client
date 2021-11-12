@@ -42,10 +42,7 @@ module.exports = {
         { from: 'src/*.html', to: "[name].html" },
         { from: 'src/images', to: 'images' },
       ]
-    }),
-    // new HtmlWebpackPlugin({
-    //   template: 'src/cms/templates/*.html'
-    // })
+    })
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -109,14 +106,10 @@ module.exports = {
         ]
       },
       {
-        test: /\.html$/i,
+        test: /\.html?$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'template-string-loader']
       },
-      // {
-      //   test: /\.html$/i,
-      //   loader: 'html-loader'
-      // },
       {
         test    : /\.(png|jpg|svg|gif)$/,
         loader  : 'url-loader',

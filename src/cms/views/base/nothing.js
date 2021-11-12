@@ -1,6 +1,6 @@
 import { View } from 'backbone.marionette';
 import { templateContext } from 'Utility/i18n';
-import Template from 'Templates/base/no_item.html';
+import Template from 'Templates/base/no_item';
 
 // The NothingView is a general purpose emptyView.
 //
