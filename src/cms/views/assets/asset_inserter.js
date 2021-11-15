@@ -85,6 +85,10 @@ class AssetInserterView extends CmsView {
     this.hideButtons();
   }
 
+  addCustom(e) {
+    console.log('custom test', e);
+  }
+
   place(el) {
     const rect = el.getBoundingClientRect();
     this.$el.css({
