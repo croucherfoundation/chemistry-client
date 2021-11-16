@@ -87,8 +87,9 @@ class AssetInserterView extends CmsView {
   }
 
   addCustomTest(e) {
-    console.log('custom test', e);
     this.containEvent(e);
+    console.log('custom test', e);
+    this.embed('customTest');
   }
 
   place(el) {
