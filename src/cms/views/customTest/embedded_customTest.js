@@ -39,15 +39,15 @@ class EmbeddedCustomTestView extends EmbeddedAssetView {
   }
 }
 
-EmbeddedQuoteView.prototype.template = Template;
-EmbeddedQuoteView.prototype.className = 'quote';
+EmbeddedCustomTestView.prototype.template = Template;
+EmbeddedCustomTestView.prototype.className = 'quote';
 
-EmbeddedQuoteView.prototype.ui = {
+EmbeddedCustomTestView.prototype.ui = {
   quote: 'blockquote',
   caption: 'figcaption',
 };
 
-EmbeddedQuoteView.prototype.bindings = {
+EmbeddedCustomTestView.prototype.bindings = {
   ':el': {
     attributes: [{
       name: 'class',
@@ -65,4 +65,4 @@ EmbeddedQuoteView.prototype.bindings = {
 };
 
 
-export default EmbeddedQuoteView;
+export default EmbeddedCustomTestView;
