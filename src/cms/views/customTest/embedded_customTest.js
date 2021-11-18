@@ -15,8 +15,6 @@ class EmbeddedCustomTestView extends EmbeddedAssetView {
     if (el) {
       const oolala = el.querySelector('div');
       if (oolala) attributes.oolala = oolala.innerText;
-      // const caption = el.querySelector('figcaption');
-      // if (caption) attributes.caption = caption.innerText;
     }
     this.model = new CustomTest(attributes);
     this.model.on('change', this.contentChange.bind(this));
@@ -26,17 +24,17 @@ class EmbeddedCustomTestView extends EmbeddedAssetView {
     this.ui.customTest.focus();
   }
 
-  // classFromLength(text = '') {
-  //   const l = text.replace(/&nbsp;/g, ' ').trim().length;
-  //   if (l < 24) {
-  //     return 'veryshort';
-  //   } if (l < 48) {
-  //     return 'short';
-  //   } if (l < 96) {
-  //     return 'shortish';
-  //   }
-  //   return '';
-  // }
+  classFromLength(text = '') {
+    const l = text.replace(/&nbsp;/g, ' ').trim().length;
+    if (l < 24) {
+      return 'veryshort';
+    } if (l < 48) {
+      return 'short';
+    } if (l < 96) {
+      return 'shortish';
+    }
+    return '';
+  }
 }
 
 EmbeddedCustomTestView.prototype.template = Template;
@@ -44,7 +42,6 @@ EmbeddedCustomTestView.prototype.className = 'customTest';
 
 EmbeddedCustomTestView.prototype.ui = {
   customTest: 'div',
-  // caption: 'figcaption',
 };
 
 EmbeddedCustomTestView.prototype.bindings = {
@@ -52,16 +49,13 @@ EmbeddedCustomTestView.prototype.bindings = {
     attributes: [{
       name: 'class',
       observe: 'oolala',
-      // onGet: 'classFromLength',
+      onGet: 'classFromLength',
     },
     ],
   },
   div: {
     observe: 'oolala',
   },
-  // figcaption: {
-  //   observe: 'caption',
-  // },
 };
 
 
