@@ -9,7 +9,7 @@ a.cms-button, label.cms-button
   transition: transform 0.25s ease-out, color 0.5s ease-out, opacity 0.5s ease-out, border-radius 0.1s ease-out, border-width 0.1s ease-out
   &:hover
     opacity: 1
-    transform: scale(1.5)
+    transform: scale(1.5);
   &:active
     transform: scale(0.9)
   svg
@@ -71,11 +71,11 @@ a.cms-control
   height: 100%
   z-index: 1002
   display: grid
-  pointer-events: none
+  pointer-events: none;
 
 figure.image
   .cms-embed-controls
-    pointer-events: auto
+    pointer-events: auto;
 
 .cms-controls
   position: absolute
@@ -144,32 +144,32 @@ figure.image
     a.cms-button.cms-menu-head
       border-bottom-left-radius: 0
       border-bottom-right-radius: 0
-      border-bottom-width: 10px
-      transform: scale(1)
+      border-bottom-width: 10px;
+      transform: scale(1);
     .cms-menu-body
       opacity: 1
       pointer-events: auto
   .cms-menu-head
-    display: block
+    display: block;
   .cms-menu-body
     position: absolute
     display: block
-    width: 360px
-    max-height: 60vh
-    overflow: auto
+    width: 360px;
+    max-height: 60vh;
+    overflow: auto;
     opacity: 0
     box-shadow: none
     background-color: white
     padding: 16px
-    margin-top: 0
+    margin-top: 0;
     transition: opacity 0.25s ease-out, box-shadow 0.25s ease-out
     border-radius: 6px
     border-top-left-radius: 0
     pointer-events: none
     &.narrow
-      width: 240px
+      width: 240px;
     &.wide
-      width: 440px
+      width: 440px;
     h3
       margin-top: 0
       font-weight: lighter
@@ -237,7 +237,7 @@ figure.image
           color: $red
           cursor: pointer
           opacity: 0.5
-          transition: color 0.25s ease-out, opacity 0.25s ease-out
+          transition: color 0.25s ease-out, opacity 0.25s ease-out;
           &:hover
             color: $red
             opacity: 1
@@ -307,8 +307,8 @@ figure.image
       max-height: 400px
       overflow: auto
     div.progress
-      width: 240px
-      padding: 20px
+      width: 240px;
+      padding: 20px;
       display: grid
       place-items: center
       & > div
@@ -342,7 +342,7 @@ figure.image
         margin: 1em auto 0
         color: $red
         opacity: 0.5
-        transition: color 0.25s ease-out, opacity 0.25s ease-out
+        transition: color 0.25s ease-out, opacity 0.25s ease-out;
         cursor: pointer
         &:hover
           opacity: 1
@@ -428,16 +428,16 @@ figure.image
   .cms-chooser.open
     border: none
   .cms-chooser.over
-    background-color: $greenish
+    background-color: $greenish;
 
 a.inline.save
   position: relative
   display: inline-block
-  margin: 0 10px
-  right: 0
-  color: $pale
-  cursor: pointer
-  transition: color 0.25s ease-out
+  margin: 0 10px;
+  right: 0;
+  color: $pale;
+  cursor: pointer;
+  transition: color 0.25s ease-out;
   svg
     width: 20px
     height: 20px
@@ -447,7 +447,7 @@ a.inline.save
 @media (max-width: 400px)
   .cms-menu
     .cms-menu-body
-      width: 300px
+      width: 300px;
 
 @media (min-width: 667px)
   .cms-controls.remover

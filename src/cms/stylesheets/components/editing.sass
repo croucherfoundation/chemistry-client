@@ -51,7 +51,7 @@ a.composing, a.composing:hover, a.composing::selection
   figure.image
     img[src=""]
       opacity: 0
-      min-height: 0
+      min-height: 0;
     div.scale
       will-change: opacity
       transition: opacity 0.25s ease-out
@@ -98,7 +98,7 @@ a.composing, a.composing:hover, a.composing::selection
       left: -32px
       width: 24px
       height: 24px
-      cursor: pointer
+      cursor: pointer;
       background:
         position: center center
         size: cover
@@ -120,7 +120,7 @@ a.composing, a.composing:hover, a.composing::selection
   top: 0
   left: 0
   min-width: 64px
-  transform: translate(-50%, 0)
+  transform: translate(-50%, 0);
   z-index: 1030
   opacity: 0
   transition: opacity 0.25s ease-out
@@ -195,7 +195,7 @@ a.composing, a.composing:hover, a.composing::selection
   &.cms-linker
     .cms-bg
       width: 300px
-      height: auto
+      height: auto;
       min-height: 128px
       padding: 16px
       p
@@ -212,11 +212,11 @@ a.composing, a.composing:hover, a.composing::selection
           cursor: pointer
           +hover
           svg
-            transform: rotate(0deg)
-            transition: transform 0.2s ease-out
+            transform: rotate(0deg);
+            transition: transform 0.2s ease-out;
           &.open
             svg
-              transform: rotate(90deg)
+              transform: rotate(90deg);
         svg.cms-icon
           width: 16px
           height: 16px
@@ -245,7 +245,7 @@ a.composing, a.composing:hover, a.composing::selection
           padding: 0
           list-style: none
           li
-            margin: 0.25em 0
+            margin: 0.25em 0;
           a.page
             cursor: pointer
             color: $mid
@@ -299,12 +299,12 @@ a.composing, a.composing:hover, a.composing::selection
       right: 0
       left: auto
       .cms-buttons
-        right: 0
+        right: 0;
         left: auto
         display: flex
-        flex-flow: row-reverse nowrap
-        align-items: flex-start
-        justify-content: flex-start
+        flex-flow: row-reverse nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
         width: 227px
         &:last-child
           margin-right: 0
@@ -315,7 +315,7 @@ a.composing, a.composing:hover, a.composing::selection
 
   .cms-buttons
     position: absolute
-    left: 2px
+    left: 2px;
     display: block
     width: 227px
 
@@ -327,7 +327,7 @@ a.composing, a.composing:hover, a.composing::selection
     margin: 0 2px
     cursor: pointer
     color: $mid
-    transition: color 0.25s ease-out
+    transition: color 0.25s ease-out;
     &:hover
       svg
         transform: scale(1.25)
@@ -353,7 +353,7 @@ a.composing, a.composing:hover, a.composing::selection
   form.import
     display: block
     margin: 0
-    white-space: nowrap
+    white-space: nowrap;
   input, a.submit
     display: inline-block
     vertical-align: top
@@ -384,9 +384,9 @@ a.composing, a.composing:hover, a.composing::selection
       +bg($blue, white)
       pointer-events: auto
     &.waiting
-      background: $pale
-      color: $pale
-      pointer-events: none
+      background: $pale;
+      color: $pale;
+      pointer-events: none;
       &:after
         content: ""
         position: absolute
@@ -422,7 +422,7 @@ a.composing, a.composing:hover, a.composing::selection
       margin: 0 10px
     input
       background-color: transparent
-      border: none
+      border: none;
       border-bottom: 1px solid $greyish
       outline: none
       color: currentColor

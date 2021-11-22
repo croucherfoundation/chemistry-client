@@ -13,6 +13,7 @@ class AssetInserterView extends CmsView {
     this.addQuote = this.addQuote.bind(this);
     this.addNote = this.addNote.bind(this);
     this.embed = this.embed.bind(this);
+    this.addCustomTest = this.addCustomTest.bind(this);
   }
 
   initialize({ helped }) {
@@ -85,6 +86,12 @@ class AssetInserterView extends CmsView {
     this.hideButtons();
   }
 
+  addCustomTest(e) {
+    this.containEvent(e);
+    console.log('custom test', e);
+    this.embed('customTest');
+  }
+
   place(el) {
     const rect = el.getBoundingClientRect();
     this.$el.css({
@@ -107,6 +114,7 @@ AssetInserterView.prototype.events = {
   'click a.linkbutton': 'addButton',
   'click a.quote': 'addQuote',
   'click a.note': 'addNote',
+  'click a.customTest': 'addCustomTest',
 };
 
 

@@ -4,6 +4,7 @@ import EmbeddedPagesView from 'Views/pages/embedded_pages';
 import EmbeddedDocumentView from 'Views/documents/embedded_document';
 import EmbeddedQuoteView from 'Views/quotes/embedded_quote';
 import EmbeddedNoteView from 'Views/notes/embedded_note';
+import EmbeddedCustomTestView from 'Views/customTest/embedded_customTest';
 
 
 const EmbedDefs = [
@@ -42,6 +43,12 @@ const EmbedDefs = [
     selector: 'div.embed.note',
     migrate_selector: 'figure.note',
     content_view: EmbeddedNoteView,
+  },
+  {
+    label: 'customTest',
+    selector: 'div.embed.customTest',
+    migrate_selector: 'figure.customTest',
+    content_view: EmbeddedCustomTestView,
   },
 ];
 
