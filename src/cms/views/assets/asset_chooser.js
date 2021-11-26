@@ -105,6 +105,13 @@ class AssetChooserView extends MenuView {
           this.ui.remover.addClass('unavailable');
         }
       }
+      if (this.ui.resizer) {
+        if (this.isPopulated()) {
+          this.ui.resizer.removeClass('unavailable');
+        } else {
+          this.ui.resizer.addClass('unavailable');
+        }
+      }
     }
   }
 
@@ -233,6 +240,7 @@ AssetChooserView.prototype.ui = {
   importer: 'a.import',
   picker: 'a.reuse',
   remover: 'a.remove',
+  resizer: 'a.resize',
   file: 'input.upload',
   action: '.action',
 };
@@ -244,6 +252,7 @@ AssetChooserView.prototype.events = {
   'click @ui.importer': 'showImporter',
   'click @ui.picker': 'showReuser',
   'click @ui.remover': 'removeWithConfirmation',
+  'click @ui.resizer': 'removeWithConfirmation', // now pretend like remove
   'click a.back': 'showOptions',
   'change @ui.file': 'filePicked',
 };
