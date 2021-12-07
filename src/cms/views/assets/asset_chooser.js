@@ -13,6 +13,7 @@ class AssetChooserView extends MenuView {
     this.showReuser = this.showReuser.bind(this);
     this.showActionView = this.showActionView.bind(this);
     this.showOptions = this.showOptions.bind(this);
+    this.showResizerInputs = this.showResizerInputs.bind(this);
     this.enableOptions = this.enableOptions.bind(this);
     this.selectedModel = this.selectedModel.bind(this);
     this.createdModel = this.createdModel.bind(this);
@@ -53,6 +54,14 @@ class AssetChooserView extends MenuView {
   showReuser(e) {
     if (e) e.preventDefault();
     this.showActionView(this.reuseView);
+  }
+
+  // Resizers
+  showResizerInputs(e) {
+    if (e) e.preventDefault();
+    // TODO: ...with confirmation
+    console.log('image_chooser > showResizerInputs');
+    this.showActionView(this.resizerView);
   }
 
   showActionView(ViewClass) {
@@ -252,13 +261,14 @@ AssetChooserView.prototype.events = {
   'click @ui.importer': 'showImporter',
   'click @ui.picker': 'showReuser',
   'click @ui.remover': 'removeWithConfirmation',
-  'click @ui.resizer': 'removeWithConfirmation', // now pretend like remove
+  'click @ui.resizer': 'showResizerInputs',
   'click a.back': 'showOptions',
   'change @ui.file': 'filePicked',
 };
 AssetChooserView.prototype.regions = {
   action: '.action',
   progress: '.progress',
+  resizerInputs: '.resizerInputs',
 };
 
 
