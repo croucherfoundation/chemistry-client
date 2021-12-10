@@ -50,6 +50,12 @@ const EmbedDefs = [
     migrate_selector: 'figure.customTest',
     content_view: EmbeddedCustomTestView,
   },
+  // {
+  //   label: 'customTest',
+  //   selector: 'div.embed.customTest',
+  //   migrate_selector: 'figure.customTest',
+  //   content_view: EmbeddedCustomTestView,
+  // },
 ];
 
 export default EmbedDefs;

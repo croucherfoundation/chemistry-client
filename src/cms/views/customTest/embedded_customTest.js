@@ -13,8 +13,8 @@ class EmbeddedCustomTestView extends EmbeddedAssetView {
     const attributes = {};
     const el = this.getOption('content');
     if (el) {
-      const oolala = el.querySelector('div');
-      if (oolala) attributes.oolala = oolala.innerText;
+      const customTestContentEl = el.querySelector('div');
+      if (customTestContentEl) attributes.customTestContent = customTestContentEl.innerText;
     }
     this.model = new CustomTest(attributes);
     this.model.on('change', this.contentChange.bind(this));
@@ -41,20 +41,20 @@ EmbeddedCustomTestView.prototype.template = Template;
 EmbeddedCustomTestView.prototype.className = 'customTest';
 
 EmbeddedCustomTestView.prototype.ui = {
-  customTest: 'div',
+  customTest: '.customTestContent',
 };
 
 EmbeddedCustomTestView.prototype.bindings = {
   ':el': {
     attributes: [{
       name: 'class',
-      observe: 'oolala',
+      observe: 'customTestContent',
       onGet: 'classFromLength',
     },
     ],
   },
   div: {
-    observe: 'oolala',
+    observe: 'customTestContent',
   },
 };
 
