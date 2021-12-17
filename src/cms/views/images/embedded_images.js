@@ -3,6 +3,7 @@ import EmbeddedCollectionView from 'Views/assets/embedded_collection';
 import Template from 'Templates/images/embedded_images.html';
 import ImagesCollection from 'Collections/images';
 import slideshow from 'Utility/slideshow';
+import ImageResizer from 'Models/image_resizer';
 import EmbeddedImageView from './embedded_image';
 
 
@@ -15,6 +16,7 @@ class EmbeddedImagesView extends EmbeddedCollectionView {
     this.setDimensions = this.setDimensions.bind(this);
     this.addEmbed = this.addEmbed.bind(this);
     this.checkCollection = this.checkCollection.bind(this);
+    // this.alignCenter = this.alignCenter.bind(this);
   }
 
   initialize() {
@@ -25,10 +27,27 @@ class EmbeddedImagesView extends EmbeddedCollectionView {
     this.state = new Model({
       position: 0,
     });
+
+    this.model = new ImageResizer();
+    this.model.on('change', () => {
+      console.log('umm model is changing');
+    });
   }
 
   onBeforeRender() {
     this.captureImages();
+
+    const attributes = {};
+    const el = this.getOption('content');
+    if (el) {
+      const alignEl = el.querySelector('.alignments');
+      if (alignEl) attributes.alignment = alignEl.getAttribute('data-align');
+    }
+
+    // this.model = new ImageResizer(attributes);
+
+    // this.model = new ImageResizer(attributes);
+    // this.model.on('change', this.contentChange.bind(this));
   }
 
   captureImages() {
@@ -86,6 +105,9 @@ class EmbeddedImagesView extends EmbeddedCollectionView {
       onMove: this.sliderMoved.bind(this),
     });
     this.el.classList.add('cms-shimmy');
+
+    console.log('embedded_images > onAfterRender > model.attributes ', this.model.attributes);
+    // document.querySelector('.embed.images').classList.add(this.model.attributes.alignment);
   }
 
   setDimensions() {
@@ -103,7 +125,6 @@ class EmbeddedImagesView extends EmbeddedCollectionView {
   }
 
   // slider position observers
-
   ifLast([position, total]) {
     return position === total - 1;
   }
@@ -172,6 +193,23 @@ class EmbeddedImagesView extends EmbeddedCollectionView {
     }
     return '';
   }
+
+  alignLeft() {
+    this.updateEmbedAlignments('left');
+  }
+
+  alignCenter() {
+    this.updateEmbedAlignments('center');
+  }
+
+  alignRight() {
+    this.updateEmbedAlignments('right');
+  }
+
+  updateEmbedAlignments(newAlignment) {
+    document.querySelector('.embed.images').classList.remove('left', 'center', 'right');
+    document.querySelector('.embed.images').classList.add(newAlignment);
+  }
 }
 
 
@@ -187,11 +225,31 @@ EmbeddedImagesView.prototype.ui = {
   slider: '.cms-slider', // handles ms-touch events in IE10
   holder: '.cms-slide-holder', // catches touchstart etc in other browsers
   slides: 'figure.image',
+  alignLeft: 'span.left',
+  alignCenter: 'span.center',
+  alignRight: 'span.right',
 };
 EmbeddedImagesView.prototype.events = {
   'click a.add': 'addEmbed',
   'click a.prev': 'movePrev',
   'click a.next': 'moveNext',
+  'click @ui.alignLeft': 'alignLeft',
+  'click @ui.alignCenter': 'alignCenter',
+  'click @ui.alignRight': 'alignRight',
+};
+EmbeddedImagesView.prototype.bindings = {
+  ':el': {
+    attributes: [{
+      name: 'data-align',
+      observe: 'alignment',
+    }],
+  },
+  '.cms-slider': {
+    attributes: [{
+      name: 'data-align',
+      observe: 'alignment',
+    }],
+  },
 };
 
 export default EmbeddedImagesView;

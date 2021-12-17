@@ -7,7 +7,7 @@ ImageResizer.prototype.pluralName = 'imageResizers';
 ImageResizer.prototype.savedAttributes = [];
 ImageResizer.prototype.defaults = {
   asset_type: 'imageResizer',
-  alignment: 'left',
+  alignment: 'center',
   size: '',
 };
 
