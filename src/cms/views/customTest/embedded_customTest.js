@@ -15,6 +15,7 @@ class EmbeddedCustomTestView extends EmbeddedAssetView {
     if (el) {
       const customTestContentEl = el.querySelector('div');
       if (customTestContentEl) attributes.customTestContent = customTestContentEl.innerText;
+      console.log('embedded_customTest > attributes', attributes);
     }
     this.model = new CustomTest(attributes);
     this.model.on('change', this.contentChange.bind(this));
